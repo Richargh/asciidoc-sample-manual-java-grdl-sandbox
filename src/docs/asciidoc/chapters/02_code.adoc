@@ -1,0 +1,39 @@
+== Code
+
+Now follows code
+
+.JavaScript
+[source,javascript]
+----
+function myFunction(){
+    console.log('Hi');
+}
+----
+
+.Python
+[source,python]
+----
+def my_function():
+    print("Hi")
+
+----
+
+.Kotlin
+[source,kotlin]
+----
+class MyClass {
+    fun myFunction(){
+        println("Hi");
+    }
+}
+----
+
+.Java
+[source,java]
+----
+class MyClass {
+    void myFunction(){
+        System.out.println("Hi");
+    }
+}
+----

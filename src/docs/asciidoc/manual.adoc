@@ -1,4 +1,4 @@
-== Hi
+= Hi
 :imagesdir: images
 
 [.thumb]
@@ -7,3 +7,5 @@ image::pexels-i̇kbal-dogan-13415959.jpg[hot air balloon]
 This is an asciidoc file.
 
 include::chapters/01_introduction.adoc[]
+
+include::chapters/02_code.adoc[]

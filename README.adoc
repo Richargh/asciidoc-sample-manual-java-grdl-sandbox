@@ -13,10 +13,11 @@ Generate a manual via AsciiDoctorJ.
 
 == Usage
 
-* Generate manual: `./gradlew asciidoctor`
- * Output stored in build/docs/asciidoc
+* Generate manual: `./gradlew asciidoctorpdf`
+** Output stored in build/docs/asciidoc
 
 == Further Content
 
+* link:https://asciidoctor.org/docs/asciidoc-writers-guide/[Asciidoc Writer's Guide]
 * link:https://asciidoctor.github.io/asciidoctor-gradle-plugin/development-3.x/user-guide/[Asciidoctor Gradle Plugin]
 
