@@ -13,3 +13,26 @@ wrapper {
 repositories {
     mavenCentral()
 }
+
+asciidoctor {
+
+    sourceDir file("src/docs/asciidoc")
+
+    baseDirFollowsSourceFile()
+
+    resources {
+        from("${sourceDir}/images") {
+            include '**'
+            into 'images'
+        }
+    }
+
+    attributes 'build-gradle': file('build.gradle'),
+            'source-highlighter': 'coderay',
+            'coderay-css': 'style',
+            'imagesdir': './images'
+}
+
+asciidoctorj {
+    options doctype: 'book'
+}
