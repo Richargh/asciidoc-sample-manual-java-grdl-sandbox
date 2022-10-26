@@ -1,0 +1,15 @@
+plugins {
+  id 'org.asciidoctor.jvm.convert' version '3.3.2'
+}
+
+apply plugin: 'java'
+
+version = '1.0.0-SNAPSHOT'
+
+wrapper {
+    gradleVersion = '7.5.1'
+}
+
+repositories {
+    mavenCentral()
+}

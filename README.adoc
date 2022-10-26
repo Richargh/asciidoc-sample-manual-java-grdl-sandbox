@@ -1,0 +1,22 @@
+= AsciiDoc Manual (Sandbox)
+
+Generate a manual via AsciiDoctorJ.
+
+*Features*:
+
+* AsciiDoctor**J** (AsciiDoctor without the J is a ruby project)
+* AsciiDoc Manual
+
+== Prerequisites
+
+* *Java 17*. If you have link:https://sdkman.io/install[SDKMAN] installed (and I'd highly recommend you do that) run `sdk env install`
+
+== Usage
+
+* Generate manual: `./gradlew asciidoctor`
+ * Output stored in build/docs/asciidoc
+
+== Further Content
+
+* link:https://asciidoctor.github.io/asciidoctor-gradle-plugin/development-3.x/user-guide/[Asciidoctor Gradle Plugin]
+
