@@ -1,5 +1,6 @@
 plugins {
-  id 'org.asciidoctor.jvm.convert' version '3.3.2'
+//  id 'org.asciidoctor.jvm.convert' version '3.3.2'
+  id 'org.asciidoctor.jvm.pdf' version '3.3.2'
 }
 
 apply plugin: 'java'
@@ -14,25 +15,19 @@ repositories {
     mavenCentral()
 }
 
-asciidoctor {
-
-    sourceDir file("src/docs/asciidoc")
-
+asciidoctorPdf {
     baseDirFollowsSourceFile()
 
-    resources {
-        from("${sourceDir}/images") {
-            include '**'
-            into 'images'
-        }
+    asciidoctorj {
+        options doctype: 'book'
+        requires 'rouge'
+        attributes 'build-gradle': file('build.gradle'),
+                'endpoint-url': 'http://example.org',
+                'source-highlighter': 'rouge',
+                'imagesdir': './images',
+                'toc': 'left',
+                'icons': 'font',
+                'idprefix': '',
+                'idseparator': '-'
     }
-
-    attributes 'build-gradle': file('build.gradle'),
-            'source-highlighter': 'coderay',
-            'coderay-css': 'style',
-            'imagesdir': './images'
-}
-
-asciidoctorj {
-    options doctype: 'book'
 }
